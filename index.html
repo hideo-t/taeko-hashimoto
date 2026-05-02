@@ -28,8 +28,9 @@ body{font-family:'Noto Serif JP',serif;background:#0c0a14;color:#e8e0d0;overflow
 .nav-links span:hover{color:#c4a66a}
 
 /* Hero */
-.hero{position:relative;padding:60px 24px 50px;text-align:center;overflow:hidden}
+.hero{position:relative;padding:40px 24px 50px;text-align:center;overflow:hidden}
 .hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at 50% 30%,rgba(196,166,106,0.06) 0%,transparent 70%)}
+.hero-image{width:140px;height:140px;border-radius:50%;object-fit:cover;border:3px solid rgba(196,166,106,0.4);margin-bottom:20px;opacity:0;animation:fadeIn 1s ease 0.1s forwards;box-shadow:0 8px 32px rgba(0,0,0,0.4)}
 .hero-name-en{font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:300;color:#c4a66a;letter-spacing:6px;position:relative;opacity:0;animation:fadeDown 0.8s ease 0.2s forwards}
 .hero-name-jp{font-family:'Noto Serif JP',serif;font-size:16px;font-weight:300;color:#a08c74;letter-spacing:8px;position:relative;margin-bottom:20px;opacity:0;animation:fadeDown 0.8s ease 0.4s forwards}
 .hero-title{font-size:13px;color:#8a7a60;letter-spacing:3px;position:relative;margin-bottom:24px;opacity:0;animation:fadeDown 0.8s ease 0.6s forwards}
@@ -143,6 +144,7 @@ textarea.form-field{resize:vertical}
 
 <!-- Hero -->
 <div class="hero">
+  <img src="images.jpg" alt="橋本妙子 TAEKO HASHIMOTO" class="hero-image">
   <div class="hero-name-en">TAEKO</div>
   <div class="hero-name-jp">&#27211;&#26412; &#22937;&#23376;</div>
   <div class="hero-title" data-i18n="hero_title">VOCALIST &bull; GIFT CONCERT PRODUCER</div>
